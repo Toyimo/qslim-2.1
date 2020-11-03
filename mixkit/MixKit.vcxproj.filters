@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Math">
+      <UniqueIdentifier>{022a0842-8ae4-43e5-8f33-6f3f06b25063}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Basic Types">
+      <UniqueIdentifier>{f4d6e78c-f4b8-40c0-aaae-3c0c57f2464c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3D Modeling">
+      <UniqueIdentifier>{d5941000-7e1a-47cd-a900-7cba9fcf1263}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GL-GUI">
+      <UniqueIdentifier>{47bad306-2e18-4145-8581-e2701b9e252e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc Services">
+      <UniqueIdentifier>{14df986f-c5bd-4ac8-9712-9671ae6b30b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Surface Clustering">
+      <UniqueIdentifier>{2dee4219-be56-44d0-921b-ba5dca5ab548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GNU getopt">
+      <UniqueIdentifier>{24ff1c83-92aa-48b9-b54c-06b9a769f720}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FLTK-based GUI">
+      <UniqueIdentifier>{58135863-d947-41bd-9a96-6c7dd81773d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Documentation">
+      <UniqueIdentifier>{d17fe2da-5328-42d5-b4a2-dc71b9100de4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\mixmops.cxx">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxFrame.cxx">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxMat3-jacobi.cxx">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxMat4-jacobi.cxx">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxHeap.cxx">
+      <Filter>Basic Types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxBlockModel.cxx">
+      <Filter>3D Modeling</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxGeom3D.cxx">
+      <Filter>3D Modeling</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxPropSlim.cxx">
+      <Filter>3D Modeling</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxQMetric.cxx">
+      <Filter>3D Modeling</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxQMetric3.cxx">
+      <Filter>3D Modeling</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxQSlim.cxx">
+      <Filter>3D Modeling</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxSMF.cxx">
+      <Filter>3D Modeling</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxStdModel.cxx">
+      <Filter>3D Modeling</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxStdSlim.cxx">
+      <Filter>3D Modeling</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxTriProject.cxx">
+      <Filter>3D Modeling</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxCamera.cxx">
+      <Filter>GL-GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxGLDebug.cxx">
+      <Filter>GL-GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxGLUtils.cxx">
+      <Filter>GL-GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxQVis3.cxx">
+      <Filter>GL-GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxStdRender.cxx">
+      <Filter>GL-GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mixmsg.cxx">
+      <Filter>Misc Services</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxAsp.cxx">
+      <Filter>Misc Services</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxCmdParser.cxx">
+      <Filter>Misc Services</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxDualModel.cxx">
+      <Filter>Surface Clustering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxDualSlim.cxx">
+      <Filter>Surface Clustering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxFaceTree-2.cxx">
+      <Filter>Surface Clustering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxFaceTree.cxx">
+      <Filter>Surface Clustering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxFitFrame-2.cxx">
+      <Filter>Surface Clustering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxFitFrame.cxx">
+      <Filter>Surface Clustering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\getopt.c">
+      <Filter>GNU getopt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\getopt1.c">
+      <Filter>GNU getopt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MxStdGUI.cxx">
+      <Filter>FLTK-based GUI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\mixmops.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mixvops.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxFrame.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxMatrix.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxVector.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxBlock.h">
+      <Filter>Basic Types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxBlock2.h">
+      <Filter>Basic Types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxBlock3.h">
+      <Filter>Basic Types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxDynBlock.h">
+      <Filter>Basic Types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxHeap.h">
+      <Filter>Basic Types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxStack.h">
+      <Filter>Basic Types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxString.h">
+      <Filter>Basic Types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxBlockModel.h">
+      <Filter>3D Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxGeom3D.h">
+      <Filter>3D Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxGeoPrims.h">
+      <Filter>3D Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxPropSlim.h">
+      <Filter>3D Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxQMetric.h">
+      <Filter>3D Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxQMetric3.h">
+      <Filter>3D Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxQSlim.h">
+      <Filter>3D Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxSMF.h">
+      <Filter>3D Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxStdModel.h">
+      <Filter>3D Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxStdSlim.h">
+      <Filter>3D Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxCamera.h">
+      <Filter>GL-GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxGL.h">
+      <Filter>GL-GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxGLUtils.h">
+      <Filter>GL-GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxManipulator.h">
+      <Filter>GL-GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mixmsg.h">
+      <Filter>Misc Services</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxAsp.h">
+      <Filter>Misc Services</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxCmdParser.h">
+      <Filter>Misc Services</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxDualModel.h">
+      <Filter>Surface Clustering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxDualSlim.h">
+      <Filter>Surface Clustering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxFaceTree.h">
+      <Filter>Surface Clustering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxFitFrame.h">
+      <Filter>Surface Clustering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\getopt.h">
+      <Filter>GNU getopt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MxStdGUI.h">
+      <Filter>FLTK-based GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mixio.h" />
+    <ClInclude Include="src\stdmix.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="COPYING.txt">
+      <Filter>Documentation</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LGPL.txt">
+      <Filter>Documentation</Filter>
+    </CustomBuild>
+    <CustomBuild Include="README.txt">
+      <Filter>Documentation</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

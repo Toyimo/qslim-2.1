@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <IncludePath>..\tools\fltk-1.3.0;$(IncludePath)</IncludePath>
+    <LibraryPath>..\tools\fltk-1.3.0\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>../mixkit/src;../libgfx/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;SAFETY=0;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\MixKit.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\MixKit.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\MixKit.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../mixkit/src;../libgfx/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\MixKit.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\MixKit.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\MixKit.lib</OutputFile>
+      <AdditionalDependencies>fltkd.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\mixmops.cxx" />
+    <ClCompile Include="src\MxFrame.cxx" />
+    <ClCompile Include="src\MxMat3-jacobi.cxx" />
+    <ClCompile Include="src\MxMat4-jacobi.cxx" />
+    <ClCompile Include="src\MxHeap.cxx" />
+    <ClCompile Include="src\MxBlockModel.cxx" />
+    <ClCompile Include="src\MxGeom3D.cxx" />
+    <ClCompile Include="src\MxPropSlim.cxx" />
+    <ClCompile Include="src\MxQMetric.cxx" />
+    <ClCompile Include="src\MxQMetric3.cxx" />
+    <ClCompile Include="src\MxQSlim.cxx" />
+    <ClCompile Include="src\MxSMF.cxx" />
+    <ClCompile Include="src\MxStdModel.cxx" />
+    <ClCompile Include="src\MxStdSlim.cxx" />
+    <ClCompile Include="src\MxTriProject.cxx" />
+    <ClCompile Include="src\MxCamera.cxx" />
+    <ClCompile Include="src\MxGLDebug.cxx" />
+    <ClCompile Include="src\MxGLUtils.cxx" />
+    <ClCompile Include="src\MxQVis3.cxx" />
+    <ClCompile Include="src\MxStdRender.cxx" />
+    <ClCompile Include="src\mixmsg.cxx" />
+    <ClCompile Include="src\MxAsp.cxx" />
+    <ClCompile Include="src\MxCmdParser.cxx" />
+    <ClCompile Include="src\MxDualModel.cxx" />
+    <ClCompile Include="src\MxDualSlim.cxx" />
+    <ClCompile Include="src\MxFaceTree-2.cxx" />
+    <ClCompile Include="src\MxFaceTree.cxx" />
+    <ClCompile Include="src\MxFitFrame-2.cxx" />
+    <ClCompile Include="src\MxFitFrame.cxx" />
+    <ClCompile Include="src\getopt.c" />
+    <ClCompile Include="src\getopt1.c" />
+    <ClCompile Include="src\MxStdGUI.cxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\mixmops.h" />
+    <ClInclude Include="src\mixvops.h" />
+    <ClInclude Include="src\MxFrame.h" />
+    <ClInclude Include="src\MxMatrix.h" />
+    <ClInclude Include="src\MxVector.h" />
+    <ClInclude Include="src\MxBlock.h" />
+    <ClInclude Include="src\MxBlock2.h" />
+    <ClInclude Include="src\MxBlock3.h" />
+    <ClInclude Include="src\MxDynBlock.h" />
+    <ClInclude Include="src\MxHeap.h" />
+    <ClInclude Include="src\MxStack.h" />
+    <ClInclude Include="src\MxString.h" />
+    <ClInclude Include="src\MxBlockModel.h" />
+    <ClInclude Include="src\MxGeom3D.h" />
+    <ClInclude Include="src\MxGeoPrims.h" />
+    <ClInclude Include="src\MxPropSlim.h" />
+    <ClInclude Include="src\MxQMetric.h" />
+    <ClInclude Include="src\MxQMetric3.h" />
+    <ClInclude Include="src\MxQSlim.h" />
+    <ClInclude Include="src\MxSMF.h" />
+    <ClInclude Include="src\MxStdModel.h" />
+    <ClInclude Include="src\MxStdSlim.h" />
+    <ClInclude Include="src\MxCamera.h" />
+    <ClInclude Include="src\MxGL.h" />
+    <ClInclude Include="src\MxGLUtils.h" />
+    <ClInclude Include="src\MxManipulator.h" />
+    <ClInclude Include="src\mixmsg.h" />
+    <ClInclude Include="src\MxAsp.h" />
+    <ClInclude Include="src\MxCmdParser.h" />
+    <ClInclude Include="src\MxDualModel.h" />
+    <ClInclude Include="src\MxDualSlim.h" />
+    <ClInclude Include="src\MxFaceTree.h" />
+    <ClInclude Include="src\MxFitFrame.h" />
+    <ClInclude Include="src\getopt.h" />
+    <ClInclude Include="src\MxStdGUI.h" />
+    <ClInclude Include="src\mixio.h" />
+    <ClInclude Include="src\stdmix.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="COPYING.txt" />
+    <CustomBuild Include="LGPL.txt" />
+    <CustomBuild Include="README.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
